@@ -1,0 +1,92 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-size: 15px;
+}
+
+#formu{
+    background-color: #2bbd80;
+    margin: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    color:white;
+}
+td{
+    letter-spacing: 1px;
+}
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+hr{
+    border: 5px solid white;
+    border-radius: 10px;
+    width: 40%;
+}
+#tf{
+    text-align: center;
+}
+
+#submit_bu{
+    margin: 10px;
+    padding: 8px 15px ;
+    border-radius: 3px;
+    color:#163ca7;
+    font-size: 17px;
+    border: 1px solid white;
+    transition: transform 0.5s, color 0.5s, background-color 0.5s;
+    border-radius: 10px;
+}
+
+#submit_bu:hover{
+    color: white;
+    background-color: #163ca7;
+    transform: scale(1.1);
+}
+
+#reset{
+    margin: 10px;
+    padding: 8px 15px ;
+    border-radius: 3px;
+    color:#bd2b2b;
+    font-size: 17px;
+    border: 1px solid white;
+    transition: transform 0.5s, color 0.5s, background-color 0.5s;
+    border-radius: 10px;
+}
+
+#reset:hover{
+    color: white;
+    background-color:#bd2b2b;
+    transform: scale(1.1);
+}
+
+input{
+    width: 200px;
+    font-size: 13px;
+    color: white;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid white;
+}
+
+input[type=radio]{
+    width: 13px;
+}
+
+input:focus{
+    border-bottom-color:blue;
+}
+
+::placeholder{
+    color:white; 
+    text-transform: capitalize; 
+    font-size: 13px;
+}
+
+select{
+    width: 208px;
+    border:none;
+    border-radius: 7px;
+}

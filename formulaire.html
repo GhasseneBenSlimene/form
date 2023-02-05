@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulaire</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="formu">
+            <form id="myformulaire">
+                <table width="100%">
+                    <tr>
+                        <td colspan="2"><font face="ComicSans MS"><h3><center>Informations générales</center></h3><hr></font><br>
+                            <font color="FF0000">*</font>: Champ obligatoire<br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="nom">Nom:</label><br><br></td>
+                        <td> <input type="text" id="nom" name="nom" placeholder="Nom" required><font color="FF0000">*</font><br class="nom_br"><br class="nom_br"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Prénom">Prénom:</label><br><br></td>
+                        <td><input type="text" id="Prénom" name="nom" placeholder="Prénom" required><font color="FF0000">*</font><br class="pre_br"><br class="pre_br"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Date de naissance">Date de naissance:</label><br><br></td>
+                        <td><input type="date" id="date_n" required><font color="FF0000">*</font><br class="date_br"><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Lieu de naissance:">Lieu de naissance:</label><br><br></td>
+                        <td><input type="text" id="lieu_n" name="Lieu de naissance" placeholder="Lieu de naissance" required><font color="FF0000">*</font><br><br></td>
+                    </tr>
+                    <tr>
+                        <td>Gouvernorat de naissance :<br><br></td>
+                        <td><select id="gouv_n">
+                            <option>Choix</option><option>Étranger</option><option>Ariana</option><option>Ben Arous</option><option>Gabes</option><option>Beja</option>
+                            <option>Jendouba</option><option>Kasserine</option><option>Kef</option><option>Bizerte</option>
+                            <option>Mahdia</option><option>Medenine</option><option>Nabeul</option><option>Kairouan</option>
+                            <option>Sfax</option><option>Siliana</option><option>Tataouine</option><option>Kebili</option>
+                            <option>Tozeur</option><option>Zaghouan</option><option>Manouba</option>
+                            <option>Sidi Bouzid</option><option>Sousse</option><option>Tunis</option><option>Monastir</option>
+                        </select required><font color="FF0000">*</font><br><br></td>
+                    </tr>  
+                    <tr id="nationalite">
+                        <td><label for="nationalite">Nationalité:</label><br><br></td>
+                        <td>
+                            <input type="radio" id="n_box1" name="n_box" required>
+                            <label for="n_box1" id="n_box1_v">Tunisienne</label>&emsp;
+                            <input type="radio" id="n_box2" name="n_box" required>
+                            <label for="n_box2" id="n_box2_v">Autre</label>&emsp;&nbsp;<font color="FF0000">*</font><br><br>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Etat civil :<br><br></td>
+                        <td><select id="etat_civil">
+                            <option>Choix</option>
+                            <option>Celibataire</option>
+                            <option>Marie</option>
+                            <option>Divorce</option>
+                            <option>Veuf</option>
+                        </select><br><br></td>
+                    </tr>         
+                    <tr>
+                        <td>Situation militaire :<br><br></td>
+                        <td><select id="situa_mil">
+                            <option>Choix</option>
+                            <option>Surcitaire</option>
+                            <option>Non concerne</option>
+                            <option>Exempte</option>
+                            <option>Accompli</option>
+                        </select><br><br></td>
+                    </tr>
+                
+                    <tr>
+                        <td colspan="2"><font face="ComicSans MS"><h3><center>Niveau d'étude</center></h3><hr></font><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Annee bac">Année du bac :</label><br><br></td>
+                        <td><input type="number" id="Annee bac" name="Annee bac" placeholder="Année du bac" required><font color="FF0000">*</font><br class="bac_br"><br></td>
+                    </tr>
+                    <tr>
+                        <td>Section :<br><br></td>
+                        <td><select id="Section">
+                            <option>Choix</option><option>Mathématique</option>
+                            <option>Technique</option><option>Science expérimentale</option>
+                            <option>Economie et gestion</option><option>Lettres</option>
+                            <option>Informatique</option><option>Sport</option>
+                        </select><font color="FF0000" required>*</font><br><br></td>
+                    </tr>
+                    <tr>
+                        <td>Mention :<br><br></td>
+                        <td><select id="Mention">
+                            <option>Choix</option><option>Passable</option>
+                            <option>Assez bien</option><option>Bien</option>
+                            <option>Très bien</option>
+                        </select required><font color="FF0000">*</font><br><br></td>
+                    </tr>
+                    <tr>
+                        <td>Session :<br><br></td>
+                        <td><select id="Session">
+                            <option>Choix</option>
+                            <option>Principale</option>
+                            <option>Controle</option>
+                        </select required><font color="FF0000">*</font><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="etablissement">Établissement d'étude actuel :</label><br><br></td>
+                        <td><input type="text" id="etablissement" name="etablissement" placeholder="Établissement" required><font color="FF0000">*</font><br class="etab_br"><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="filiere">Filière d'étude actuel :       </label><br><br></td>
+                        <td><input type="text" id="filiere" name="filiere" placeholder="Filière" required><font color="FF0000">*</font><br class="fil_br"><br></td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2"><font face="ComicSans MS"><h3><center>Address</center></h3><hr></font><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="rue">Rue :</label><br><br></td>
+                        <td><input type="text" id="rue" name="rue" placeholder="Rue" required><font color="FF0000">*</font><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ville">Ville :</label><br><br></td>
+                        <td><input type="text" id="Ville" name="Ville" placeholder="Ville" ><font color="FF0000">*</font><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="postal">Code postal :</label><br><br></td>
+                        <td><input type="number" id="postal" name="postal" placeholder="postal" ><font color="FF0000">*</font><br><br></td>
+                    </tr>
+                    <tr>
+                        <td>Gouvernorat :<br><br></td>
+                        <td><select id="gouvernorat">
+                            <option>Choix</option><option>Ariana</option><option>Ben Arous</option><option>Gabes</option><option>Beja</option>
+                            <option>Jendouba</option><option>Kasserine</option><option>Kef</option><option>Bizerte</option>
+                            <option>Mahdia</option><option>Medenine</option><option>Nabeul</option><option>Kairouan</option>
+                            <option>Sfax</option><option>Siliana</option><option>Tataouine</option><option>Kebili</option>
+                            <option>Tozeur</option><option>Zaghouan</option><option>Manouba</option>
+                            <option>Sidi Bouzid</option><option>Sousse</option><option>Tunis</option><option>Monastir</option>
+                        </select required><font color="FF0000">*</font><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="telephone">Téléphone :</label><br><br></td>
+                        <td><input type="number" id="telephone" name="telephone" placeholder="telephone" required><font color="FF0000">*</font><br class="tel_br"><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Profession">Profession :</label><br><br></td>
+                        <td><input type="text" id="Profession" name="Profession" placeholder="Profession"><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="etablissement">Etablissement :</label><br><br></td>
+                        <td><input type="text" id="etablissement_p" name="etablissement" placeholder="etablissement"><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">E-mail :</label><br><br></td>
+                        <td><input type="email" id="mail" name="mail" placeholder="e-mail" required><font color="FF0000">*</font><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail-c">E-mail confirmation :</label><br><br></td>
+                        <td><input type="email" id="mail-c" name="mail-c" placeholder="E-mail confirmation" required><font color="FF0000">*</font><br class="em_br"><br></td>
+                    </tr>
+                    <tr id="tf">
+                        <td><input type="reset" value="Effacer la saisie" id="reset"></td>
+                        <td><input type="submit" value="Valider" id="submit_bu"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <script src="FormulaireJS.js"></script>
+    </body>
+</html>
